@@ -1,4 +1,10 @@
-Demo to highlight performance regression in Webpack 2.1.0-beta.28
+# Webpack 2.1 beta slowness
+
+Demo to highlight performance regression in Webpack 2.1.0-beta.28.
+
+OS: Max OS X 10.10.5 
+Node: v7.0.0
+Yarn: 0.17.9
 
 ### Background
 
