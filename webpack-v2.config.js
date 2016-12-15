@@ -3,6 +3,9 @@ const webpack = require('webpack')
 const assetsPath = path.resolve(__dirname, 'dist')
 
 module.exports = {
+  performance: {
+    hints: false,
+  },
   resolve: {
     modules: [
       path.resolve(__dirname),

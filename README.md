@@ -38,7 +38,7 @@ Start by running
     yarn add webpack@1.x.x
     time node_modules/.bin/webpack --config webpack-v1.config.js
 
-I get 4.1 for first build, then 2.1 seconds for consecutive builds.
+I get 4.1 for first build, then 2.1 seconds for consecutive builds. Watch mode rebuilds ~180 ms.
 
 
 #### Webpack 2.1.0-beta.28 test
@@ -46,4 +46,12 @@ I get 4.1 for first build, then 2.1 seconds for consecutive builds.
     yarn add webpack@2.1.0-beta.28
     time node_modules/.bin/webpack --config webpack-v2.config.js
 
-I get 5.1 for first build, then 4.0 seconds for consecutive builds.
+I get 5.1 for first build, then 4.0 seconds for consecutive builds. Watch mode rebuilds ~250-320 ms.
+
+
+#### Webpack 2.2.0-rc.0 test
+
+    yarn add webpack@2.2.0-rc.0
+    time node_modules/.bin/webpack --config webpack-v2.config.js
+
+I get 3.8 for first build, then 2.7 seconds for consecutive builds. Watch mode rebuilds ~110 ms.
