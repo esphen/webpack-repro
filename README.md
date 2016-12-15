@@ -13,14 +13,14 @@ regression for consecutive development builds. These were the timings from the
 larger project
 
 *Cold cache*
-Webpack 1.13.3: 15-16 seconds
-Webpack 2.1.0-beta.26: 28 seconds
-Webpack 2.1.0-beta.27: 27 seconds
+- Webpack 1.13.3: 15-16 seconds
+- Webpack 2.1.0-beta.26: 28 seconds
+- Webpack 2.1.0-beta.27: 27 seconds
 
 *Warm cache*
-Webpack 1: 9 seconds
-Webpack 2.1.0-beta.26: 19 seconds
-Webpack 2.1.0-beta.27: 18 seconds
+- Webpack 1: 9 seconds
+- Webpack 2.1.0-beta.26: 19 seconds
+- Webpack 2.1.0-beta.27: 18 seconds
 
 For production builds webpkack 2 showed a ~30% speedup compared to webpack 1.
 
@@ -38,7 +38,9 @@ Start by running
     yarn add webpack@1.x.x
     time node_modules/.bin/webpack --config webpack-v1.config.js
 
-I get 4.1 for first build, then 2.1 seconds for consecutive builds. Watch mode rebuilds ~180 ms.
+First/cold: 4.1 s
+Consecutive builds: 2.1 s
+Watch mode rebuilds: ~180 ms
 
 
 #### Webpack 2.1.0-beta.28 test
@@ -46,7 +48,9 @@ I get 4.1 for first build, then 2.1 seconds for consecutive builds. Watch mode r
     yarn add webpack@2.1.0-beta.28
     time node_modules/.bin/webpack --config webpack-v2.config.js
 
-I get 5.1 for first build, then 4.0 seconds for consecutive builds. Watch mode rebuilds ~250-320 ms.
+First/cold: 5.1 s
+Consecutive builds: 4.0 s
+Watch mode rebuilds: ~250-320 ms
 
 
 #### Webpack 2.2.0-rc.0 test
@@ -54,4 +58,6 @@ I get 5.1 for first build, then 4.0 seconds for consecutive builds. Watch mode r
     yarn add webpack@2.2.0-rc.0
     time node_modules/.bin/webpack --config webpack-v2.config.js
 
-I get 3.8 for first build, then 2.7 seconds for consecutive builds. Watch mode rebuilds ~110 ms.
+First/cold: 3.8 s
+Consecutive builds: 2.7 s
+Watch mode rebuilds: ~110 ms
