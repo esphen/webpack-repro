@@ -38,9 +38,9 @@ Start by running
     yarn add webpack@1.x.x
     time node_modules/.bin/webpack --config webpack-v1.config.js
 
-First/cold: 4.1 s
-Consecutive builds: 2.1 s
-Watch mode rebuilds: ~180 ms
+- First/cold: 4.1 s
+- Consecutive builds: 2.1 s
+- Watch mode rebuilds: ~180 ms
 
 
 #### Webpack 2.1.0-beta.28 test
@@ -48,9 +48,9 @@ Watch mode rebuilds: ~180 ms
     yarn add webpack@2.1.0-beta.28
     time node_modules/.bin/webpack --config webpack-v2.config.js
 
-First/cold: 5.1 s
-Consecutive builds: 4.0 s
-Watch mode rebuilds: ~250-320 ms
+- First/cold: 5.1 s
+- Consecutive builds: 4.0 s
+- Watch mode rebuilds: ~250-320 ms
 
 
 #### Webpack 2.2.0-rc.0 test
@@ -58,6 +58,6 @@ Watch mode rebuilds: ~250-320 ms
     yarn add webpack@2.2.0-rc.0
     time node_modules/.bin/webpack --config webpack-v2.config.js
 
-First/cold: 3.8 s
-Consecutive builds: 2.7 s
-Watch mode rebuilds: ~110 ms
+- First/cold: 3.8 s
+- Consecutive builds: 2.7 s
+- Watch mode rebuilds: ~110 ms
