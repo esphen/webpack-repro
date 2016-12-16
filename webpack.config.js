@@ -16,7 +16,7 @@ module.exports = {
   devtool: 'eval',
   entry: {
     main: [
-      './app.js',
+      './app.jsx',
     ],
   },
   output: {
@@ -26,6 +26,12 @@ module.exports = {
   },
   module: {
     loaders: [
+      {
+        enforce: 'pre',
+        test: /\.jsx?$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      },
       {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader?cacheDirectory',
