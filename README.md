@@ -1,10 +1,10 @@
 # Webpack 2.2.0-rc.0 watch mode
 
-Demo to highlight watch mode regression in Webpack 2.2.0-rc.0.
+Demo to highlight eslint regression
 
-- OS: Max OS X 10.10.5
-- Node: v7.0.0
-- Yarn: 0.17.9
+- OS: Fedora 25
+- Node: v7.2.0
+- Yarn: 0.18.0
 
 
 ### Running the test
@@ -12,22 +12,10 @@ Demo to highlight watch mode regression in Webpack 2.2.0-rc.0.
 1. Start by running
     yarn
 
-    yarn run watch
+    yarn start
 
 
-2. Make a bug in app.js by uncommenting `// x={}`
+2. Start fixing eslint flaws in `foo.jsx`
 
-3. See webpack fail with
+3. See the CLI output growing start to repeat itself instead of resetting
 
-```
-  ERROR in ./app.js
-  Module build failed: SyntaxError: JSX attributes must only be assigned a non-empty expression (9:6)
-
-   7 |   <Checkbox
-   8 |     // uncomment this line:
-  >  9 |     x={}
-     |       ^
-  10 |   />, document.getElementById('root')
-```
-
-Try it fix the error by see that webpack it not able to recover.

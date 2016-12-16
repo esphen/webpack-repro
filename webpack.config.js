@@ -13,19 +13,26 @@ module.exports = {
     ],
     extensions: ['.js', '.jsx'],
   },
-  devtool: 'eval',
+  devtool: 'cheap-source-map',
   entry: {
     main: [
-      './app.js',
+      './app.jsx',
     ],
   },
   output: {
     path: assetsPath,
-    filename: '[name]-[hash].js',
-    chunkFilename: '[name]-[chunkhash].js',
+    filename: 'bundle.js',
+    chunkFilename: 'bundle.js',
+    pathinfo: true,
   },
   module: {
     loaders: [
+      // {
+      //   enforce: 'pre',
+      //   test: /\.jsx?$/,
+      //   loader: 'eslint-loader',
+      //   exclude: /node_modules/
+      // },
       {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader?cacheDirectory',
