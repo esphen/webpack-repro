@@ -10,10 +10,10 @@ Demo to highlight babel-plugin-add-module-exports breaking webpack
 ### Reproducing
 
 1. Start by running
-
-    yarn
-    yarn start
-
+```
+yarn
+yarn start
+```
 
 2. Check the console and see that it is broken
 
